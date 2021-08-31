@@ -8,7 +8,7 @@
 //     della parola originale quindi è una parola Palidroma
 // 4. Stampo il risultato.
 
-var userName = prompt("Scopri se il tuo nome é Palidromo! Scrivi il tuo nome: ");
+var userName = prompt("Scopri se il tuo nome é Palidromo! Scrivi il tuo nome: ").toLowerCase();
 
 function wordPalindrome(wordToControl){
    var wordSplit = wordToControl.split("").reverse();
