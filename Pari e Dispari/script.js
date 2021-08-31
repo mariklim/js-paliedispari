@@ -26,7 +26,7 @@ console.log(somma);
 
 function evenORodd(num){
     if(num%2 == 0){
-        return "pari";
+        return "pari"; 
         }
         else{
         return "dispari";
@@ -44,5 +44,5 @@ if (evenORodd(somma) == "pari"){
 if (pariDispariUtente == result){
     console.log("hai vinto: " + "ha scelto " + pariDispariUtente + " e anche la somma " + somma + " è " + result );
 }else{
-    console.log ("hai perso: " + "ha scelto " + pariDispariUtente + " e anche la somma " + somma + " è " + result );
+    console.log ("hai perso: " + "ha scelto " + pariDispariUtente + " e ma la somma " + somma + " è " + result );
 }
