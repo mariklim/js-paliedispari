@@ -18,7 +18,7 @@ function wordPalindrome(wordToControl){
     result = alert(wordToControl + " = " + wordRevers + " " + "é palindromo");
    }
    else{
-    result = alert(wordToControl + " != " + wordRevers + " " + "non é palindromo");
+    result = alert(wordToControl + " ≠ " + wordRevers + " " + "non é palindromo");
    }
      
    return result;
