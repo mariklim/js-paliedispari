@@ -11,15 +11,24 @@
 // 4. Creo una funzione se numero e paro o dispari
 // 5. Stampo il risultato
 
-var pariDispariUtente = prompt("scegli pari o dispari");
+var pariDispariUtente = prompt("scegli tra pari o dispari");
+
+if(pariDispariUtente !== "pari" || pariDispariUtente !== "dispari"){
+    pariDispariUtente = prompt("hai sbagliato, scegli tra pari o dispari");
+    }
+
+
 var numeroUtente = parseInt(prompt("Scegli un numero da 1 a 5"));
-console.log(numeroUtente);
+
+if(numeroUtente  < 1 || numeroUtente  > 5){
+    numeroUtente = prompt("errore! Scegli un numero da 1 a 5");
+    }
 
 function numberRandom(min, max){
     return parseInt(Math.random() * (max - min + 1) + min);
 }
 var numeroComputer;
-console.log(numeroComputer = numberRandom(1, 5));
+alert(numeroComputer = numberRandom(1, 5));
 
 var somma = numeroUtente + numeroComputer;
 console.log(somma);
@@ -42,7 +51,7 @@ if (evenORodd(somma) == "pari"){
 
 // controllo se il risultato (pari o dispari) della somma corrisponde a quello che ha scelto utente.
 if (pariDispariUtente == result){
-    console.log("hai vinto: " + "ha scelto " + pariDispariUtente + " e anche la somma " + somma + " è " + result );
+    alert("hai vinto: " + "ha scelto " + pariDispariUtente + " e anche la somma " + somma + " è " + result );
 }else{
-    console.log ("hai perso: " + "ha scelto " + pariDispariUtente + " e ma la somma " + somma + " è " + result );
+    alert("hai perso: " + "ha scelto " + pariDispariUtente + " e ma la somma " + somma + " è " + result );
 }
