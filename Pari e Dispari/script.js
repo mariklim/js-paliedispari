@@ -13,16 +13,17 @@
 
 var pariDispariUtente = prompt("scegli tra pari o dispari");
 
-if(pariDispariUtente !== "pari" || pariDispariUtente !== "dispari"){
-    pariDispariUtente = prompt("hai sbagliato, scegli tra pari o dispari");
-    }
+// if(pariDispariUtente !== "pari" || pariDispariUtente !== "dispari"){
+//     pariDispariUtente = prompt("hai sbagliato, scegli tra pari o dispari");
+//     }
 
 
 var numeroUtente = parseInt(prompt("Scegli un numero da 1 a 5"));
-
 if(numeroUtente  < 1 || numeroUtente  > 5){
-    numeroUtente = prompt("errore! Scegli un numero da 1 a 5");
+    numeroUtente = parseInt(prompt("Errore! Scegli un numero da 1 a 5"));
     }
+
+console.log(numeroUtente);
 
 function numberRandom(min, max){
     return parseInt(Math.random() * (max - min + 1) + min);

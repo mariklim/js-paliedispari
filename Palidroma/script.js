@@ -15,10 +15,11 @@ function wordPalindrome(wordToControl){
    var wordRevers = wordSplit.join('');
    var result;
    if(wordToControl == wordRevers){
-    result = alert(wordToControl + " = " + wordRevers + " " + "é palindromo");
+   
+    result = alert(wordToControl + " = " + wordRevers + " " + "é palindroma"); 
    }
    else{
-    result = alert(wordToControl + " ≠ " + wordRevers + " " + "non é palindromo");
+    result = alert(wordToControl + " ≠ " + wordRevers + " " + "non é palindroma");
    }
      
    return result;
